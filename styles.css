@@ -221,7 +221,7 @@ svg { display: block; }
 
 /* Languages / polyglot */
 .polyglot { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
-.polyglot li { position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 132px;
+.polyglot li { position: relative; display: flex; flex-direction: column; gap: 14px;
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 22px; transition: transform .3s var(--ease), border-color .3s; overflow: hidden; }
 .polyglot li:hover { transform: translateY(-5px); border-color: var(--border-2); }
@@ -229,7 +229,7 @@ svg { display: block; }
   background: radial-gradient(circle, var(--accent-glow), transparent 70%); opacity: 0; transition: opacity .3s; }
 .polyglot li:hover::after { opacity: 1; }
 .pg-native { display: block; font-family: var(--font-display); font-size: 1.7rem; font-weight: 600; color: var(--text); line-height: 1; }
-.pg-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 16px; border-top: 1px solid var(--border); }
+.pg-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 14px; border-top: 1px solid var(--border); }
 .pg-name { color: var(--muted); font-size: .85rem; }
 .pg-lvl { flex-shrink: 0; font-family: var(--font-mono); font-size: .72rem; color: var(--accent); border: 1px solid var(--border-2); border-radius: 999px; padding: 3px 10px; }
 
