@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tsumanuma Tech Solutions — Alexandre Tsumanuma</title>
+  <meta name="description" content="Tsumanuma Tech Solutions — Desenvolvimento de software, engenharia, inteligência artificial e cibersegurança. Soluções seguras, inteligentes e escaláveis." />
+  <meta name="author" content="Alexandre Tsumanuma" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Tsumanuma Tech Solutions" />
+  <meta property="og:description" content="Software seguro, inteligente e escalável — Dev · Engenharia · IA · Cibersegurança." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://weyzin.github.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='monospace'>&#123;&#125;</text></svg>" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" aria-label="Tsumanuma Tech Solutions">
+      <span class="brand-mark">T.T</span>
+      <span class="brand-name">Tsumanuma<span class="brand-sub">Tech Solutions</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#services">Serviços</a>
+      <a href="#experience">Trajetória</a>
+      <a href="#work">Projetos</a>
+      <a href="#stack">Stack</a>
+      <a href="#process">Processo</a>
+      <a href="#contact" class="nav-cta">Contato</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="dot"></span>Engenheiro de Software · Arquiteto de Cibersegurança</p>
+          <h1 class="hero-title">
+            Software <span class="accent">seguro</span>,<br />
+            inteligente e <span class="accent">escalável</span>.
+          </h1>
+          <p class="hero-lede">
+            Sou <strong>Alexandre Tsumanuma</strong>, fundador da <strong>Tsumanuma Tech Solutions</strong>
+            e Engenheiro de Software no Autoconf. Construo projetos de <strong>IA</strong>, desenho
+            <strong>arquiteturas em nuvem</strong> (AWS/Azure) e soluções seguras — do código à produção.
+            Fora do trabalho, desenvolvo <strong>jogos e RPGs</strong> por hobby.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">Ver projetos</a>
+            <a href="#contact" class="btn btn-ghost">Falar comigo</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>7+</strong><span>anos de experiência</span></li>
+            <li><strong>5</strong><span>idiomas</span></li>
+            <li><strong>3</strong><span>pós-graduações</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Terminal decorativo -->
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <p>tsumanuma@tech: ~</p>
+            </div>
+            <pre class="terminal-body"><code><span class="t-c">$</span> whoami
+<span class="t-o">alexandre.tsumanuma</span>
+<span class="t-c">$</span> cat perfil.json
+{
+  <span class="t-k">"empresa"</span>: <span class="t-s">"Tsumanuma Tech Solutions"</span>,
+  <span class="t-k">"cargo"</span>: <span class="t-s">"Software Engineer @ Autoconf"</span>,
+  <span class="t-k">"stack"</span>: [<span class="t-s">"C#"</span>, <span class="t-s">"Python"</span>, <span class="t-s">"AWS"</span>],
+  <span class="t-k">"focos"</span>: [<span class="t-s">"IA"</span>, <span class="t-s">"arquitetura"</span>, <span class="t-s">"cibersegurança"</span>]
+}
+<span class="t-c">$</span> <span class="cursor">▋</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>CODE ✦ SECURE ✦ AUTOMATE ✦ DEPLOY ✦ CODE ✦ SECURE ✦ AUTOMATE ✦ DEPLOY ✦</span>
+        <span>CODE ✦ SECURE ✦ AUTOMATE ✦ DEPLOY ✦ CODE ✦ SECURE ✦ AUTOMATE ✦ DEPLOY ✦</span>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="section-head reveal">
+        <p class="section-tag">✦ O que faço</p>
+        <h2>Soluções de ponta a ponta</h2>
+        <p class="section-sub">Da concepção à produção — com segurança e inteligência em cada camada.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-icon">&lt;/&gt;</div>
+          <h3>Desenvolvimento de Software</h3>
+          <p>Aplicações web e APIs robustas com Java, C#, PHP/Laravel e Python. Código limpo, testável e mantível.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">☁</div>
+          <h3>Arquitetura &amp; Cloud</h3>
+          <p>Arquiteturas escaláveis e seguras em AWS e Azure. Infraestrutura como código com Terraform e automação de deploy.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">✷</div>
+          <h3>Inteligência Artificial</h3>
+          <p>Soluções com LLMs, RAG e agentes, do protótipo à produção. Testes de BIAS para avaliar justiça e robustez dos modelos, com segurança dos dados em cada etapa.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🛡</div>
+          <h3>Cibersegurança</h3>
+          <p>Desenvolvimento seguro, hardening de ambientes cloud e monitoramento contínuo com SIEM e NOC.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / TRAJETÓRIA -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <p class="section-tag">✦ Trajetória</p>
+        <h2>Experiência</h2>
+        <p class="section-sub">Mais de 7 anos entre desenvolvimento, arquitetura de software e cibersegurança.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="tl-date">2025 — Atual</span>
+          <div class="tl-body">
+            <h3>Engenheiro de Software <span class="tl-org">· Autoconf</span></h3>
+            <p>Projetos de IA, desenho de arquiteturas de software, infraestrutura em AWS e cibersegurança.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl-date">2021 — 2025</span>
+          <div class="tl-body">
+            <h3>CITS <span class="tl-org">· Centro Internacional de Tecnologia de Software</span></h3>
+            <p class="tl-note">Trajetória de ~4 anos, com evolução de desenvolvedor a arquiteto de cibersegurança:</p>
+            <ul class="tl-roles">
+              <li><strong>Arquiteto de Cibersegurança</strong> — arquitetura de software em nuvem, definição de requisitos de segurança, testes de BIAS em modelos de IA, SIEM/NOC e revisão de scripts Terraform e Azure.</li>
+              <li><strong>Desenvolvedor Sênior — Java</strong> — desenvolvimento de aplicações robustas e liderança técnica, com foco crescente em segurança.</li>
+              <li><strong>Desenvolvedor Pleno</strong> — desenvolvimento full stack e evolução de sistemas em produção.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl-date">2020 — 2021</span>
+          <div class="tl-body">
+            <h3>Desenvolvedor Júnior <span class="tl-org">· Grunitzky</span></h3>
+            <p>Aplicações web e testes automatizados com PHP e Laravel, APIs REST e manutenção de bancos SQL.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl-date">2019 — 2020</span>
+          <div class="tl-body">
+            <h3>Desenvolvedor Full Stack <span class="tl-org">· YouDO Brasil</span></h3>
+            <p>Aplicações web com PHP/Laravel, APIs REST, soluções IoT em Python para controle de acesso e quiosques interativos em C#.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="extra-grid">
+        <div class="reveal">
+          <h3 class="extra-title">Formação</h3>
+          <ul class="extra-list">
+            <li><strong>Pós — Engenharia de Software em IA Aplicada</strong><span>UNIPDS · cursando</span></li>
+            <li><strong>Pós — Redes e Cibersegurança</strong><span>Hackone · 2023</span></li>
+            <li><strong>Pós — Arquitetura de Software, Data Science e Cibersegurança</strong><span>PUC-PR · 2021–2022</span></li>
+            <li><strong>Bacharelado — Análise e Desenvolvimento de Sistemas</strong><span>Universidade Positivo · 2018–2020</span></li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3 class="extra-title">Idiomas</h3>
+          <ul class="lang-list">
+            <li>🇧🇷 Português <span>Nativo</span></li>
+            <li>🇬🇧 Inglês <span>C1</span></li>
+            <li>🇪🇸 Espanhol <span>B1</span></li>
+            <li>🇯🇵 Japonês <span>B1</span></li>
+            <li>🇨🇳 Chinês <span>B1</span></li>
+            <li>🇰🇷 Coreano <span>A2</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK / PROJECTS -->
+    <section class="section" id="work">
+      <div class="section-head reveal">
+        <p class="section-tag">✦ Selected Works</p>
+        <h2>Projetos</h2>
+        <p class="section-sub">
+          Uma amostra dos <strong>muitos projetos</strong> dos quais participei ao longo da carreira. Os
+          repositórios são privados — aqui vai o que entreguei e a stack envolvida.
+          <!-- [EDITAR] ajuste as descrições como preferir -->
+        </p>
+      </div>
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project-index">01</div>
+          <div class="project-body">
+            <h3>Plataforma de IA com testes de BIAS</h3>
+            <p>Participei do desenvolvimento e da segurança de modelos de IA, com testes de BIAS para avaliar justiça e robustez, além da proteção dos dados usados nas fases de teste.</p>
+            <div class="project-tags"><span>Python</span><span>IA / ML</span><span>Segurança de dados</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">02</div>
+          <div class="project-body">
+            <h3>Arquitetura de Nuvem Segura</h3>
+            <p>Desenho de arquiteturas escaláveis e seguras, configuração de segurança de ambientes cloud e monitoramento contínuo com soluções de SIEM e NOC.</p>
+            <div class="project-tags"><span>AWS / Azure</span><span>Terraform</span><span>SIEM / NOC</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">03</div>
+          <div class="project-body">
+            <h3>Controle de Acesso IoT</h3>
+            <p>Solução IoT em Python para controle de acesso a ambientes via identificação digital, integrada a sistemas web e APIs REST.</p>
+            <div class="project-tags"><span>Python</span><span>IoT</span><span>REST API</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">04</div>
+          <div class="project-body">
+            <h3>Quiosques Interativos</h3>
+            <p>Quiosques de automação de compras desenvolvidos em C#, com interface interativa e integração a sistemas de pagamento.</p>
+            <div class="project-tags"><span>C#</span><span>Automação</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="projects-more reveal">+ diversos outros projetos ao longo de 7+ anos de carreira.</p>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <div class="section-head reveal">
+        <p class="section-tag">✦ Toolkit</p>
+        <h2>Tecnologias &amp; ferramentas</h2>
+      </div>
+      <ul class="stack-list reveal">
+        <li>Java</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>Laravel</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>SQL</li>
+        <li>NoSQL</li>
+        <li>AWS</li>
+        <li>Azure</li>
+        <li>Terraform</li>
+        <li>Docker</li>
+        <li>Linux</li>
+        <li>macOS</li>
+        <li>IA / LLMs</li>
+        <li>RAG</li>
+        <li>AI Agents</li>
+        <li>Machine Learning</li>
+        <li>SIEM / SOC</li>
+        <!-- [EDITAR] troque/adicione as ferramentas de SOC/SIEM que você usa (ex: Splunk, Wazuh, Sentinel, QRadar) -->
+        <li>Splunk</li>
+        <li>Wazuh</li>
+        <li>IoT</li>
+        <li>REST APIs</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="section-head reveal">
+        <p class="section-tag">✦ Meu processo</p>
+        <h2>Como eu trabalho</h2>
+      </div>
+      <ol class="process">
+        <li class="reveal"><span class="step-num">01</span><h3>Descobrir</h3><p>Entendo o problema, o contexto e os requisitos — funcionais e de segurança — antes de escrever qualquer linha.</p></li>
+        <li class="reveal"><span class="step-num">02</span><h3>Planejar</h3><p>Defino arquitetura, stack e um roadmap claro, priorizando o que gera valor.</p></li>
+        <li class="reveal"><span class="step-num">03</span><h3>Desenvolver</h3><p>Construo com código limpo, testes e práticas de desenvolvimento seguro.</p></li>
+        <li class="reveal"><span class="step-num">04</span><h3>Entregar</h3><p>Deploy automatizado, monitoramento e suporte contínuo em produção.</p></li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-inner reveal">
+        <p class="section-tag">✦ Vamos conversar</p>
+        <h2>Tem um projeto em mente?</h2>
+        <p class="section-sub">Do MVP à solução em produção — vamos construir algo seguro e inteligente juntos.</p>
+        <!-- [EDITAR] remova o WhatsApp se não quiser o telefone público -->
+        <a href="https://wa.me/5541995064366" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar orçamento</a>
+        <div class="socials">
+          <a href="https://github.com/weyzin" target="_blank" rel="noopener">GitHub</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://www.linkedin.com/in/alexandre-tsumanuma/" target="_blank" rel="noopener">LinkedIn</a>
+          <span aria-hidden="true">·</span>
+          <a href="mailto:alexandretsumanuma@outlook.com">E-mail</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span class="brand-mark small">T.T</span> Tsumanuma Tech Solutions</p>
+    <p class="footer-note">© <span id="year"></span> Alexandre Tsumanuma · Building secure &amp; intelligent software.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
