@@ -145,6 +145,11 @@ svg { display: block; }
 .meter i:nth-child(8){animation-delay:.84s}
 @keyframes mtr { 0%,100% { opacity: .9; } 50% { opacity: .32; } }
 .prow-foot { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 18px; margin-top: 2px; }
+.term { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: .76rem; color: var(--muted); }
+.term-prompt { color: var(--accent); }
+.term-line { white-space: nowrap; overflow: hidden; }
+.term-cursor { color: var(--accent); animation: blink 1s steps(2) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
 
 /* ---------- Marquee ---------- */
 .marquee { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg-2); overflow: hidden; padding: 16px 0; }

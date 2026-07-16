@@ -182,4 +182,30 @@
   } else {
     items.forEach(function (el) { el.classList.add("visible"); });
   }
+
+  /* ------------------- terminal typewriter ------------------------ */
+  var termLine = document.getElementById("termLine");
+  if (termLine) {
+    var msgs = ["monitoring systems…", "ci/cd: passing", "security scan: clean", "agents: online", "deploy: ok"];
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) {
+      termLine.textContent = "monitoring systems";
+    } else {
+      var mi = 0, ci = 0, deleting = false;
+      (function type() {
+        var m = msgs[mi];
+        if (!deleting) {
+          ci++;
+          termLine.textContent = m.slice(0, ci);
+          if (ci >= m.length) { deleting = true; setTimeout(type, 1700); return; }
+          setTimeout(type, 55);
+        } else {
+          ci--;
+          termLine.textContent = m.slice(0, ci);
+          if (ci <= 0) { deleting = false; mi = (mi + 1) % msgs.length; setTimeout(type, 350); return; }
+          setTimeout(type, 26);
+        }
+      })();
+    }
+  }
 })();
