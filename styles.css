@@ -123,25 +123,28 @@ svg { display: block; }
 .hero-stats strong { font-family: var(--font-display); font-size: 1.7rem; color: var(--text); }
 .hero-stats span { font-size: .82rem; color: var(--muted); }
 
-/* Architecture diagram */
+/* Domain status panel */
 .hero-visual { display: flex; justify-content: center; }
-.diagram-frame { width: 100%; max-width: 460px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border);
+.panel { width: 100%; max-width: 430px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border);
   box-shadow: 0 30px 80px rgba(0,0,0,.5); overflow: hidden; }
-.diagram-head { display: flex; align-items: center; justify-content: space-between; padding: 11px 16px;
-  background: var(--surface-2); border-bottom: 1px solid var(--border); font-family: var(--font-mono); font-size: .72rem; color: var(--dim); }
+.panel-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 18px;
+  background: var(--surface-2); border-bottom: 1px solid var(--border); font-family: var(--font-mono); font-size: .74rem; color: var(--dim); }
 .d-live { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); }
 .d-live .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); animation: pulse 2s infinite; }
-.diagram { width: 100%; height: auto; padding: 8px; }
-.diagram .perimeter { fill: none; stroke: var(--signal); stroke-opacity: .35; stroke-width: 1; stroke-dasharray: 5 5; }
-.diagram .perimeter-label { fill: var(--signal); font-family: var(--font-mono); font-size: 8px; letter-spacing: .05em; opacity: .7; }
-.diagram .edge { stroke-dasharray: 6 6; animation: flow 1.2s linear infinite; }
-@keyframes flow { to { stroke-dashoffset: -12; } }
-.diagram .node text { fill: var(--text); font-family: var(--font-mono); font-size: 11px; text-anchor: middle; dominant-baseline: middle; }
-.diagram .node circle, .diagram .node rect { stroke: var(--border-2); stroke-width: 1.5; }
-.diagram .node.hub rect { stroke: var(--accent); filter: drop-shadow(0 0 8px var(--accent-glow)); }
-.diagram .node.ai circle { stroke: var(--accent); }
-.diagram .node.cloud rect { stroke: var(--accent-2); }
-.diagram .node.sec circle { stroke: var(--signal); }
+.panel-body { padding: 24px 22px; display: flex; flex-direction: column; gap: 18px; font-family: var(--font-mono); }
+.prow { display: grid; grid-template-columns: 66px 1fr auto; align-items: center; gap: 16px; }
+.pl { font-size: .82rem; color: var(--muted); }
+.pt { font-size: .74rem; color: var(--accent); white-space: nowrap; }
+.pv { font-size: .74rem; color: var(--muted); white-space: nowrap; }
+.meter { display: flex; gap: 5px; }
+.meter i { height: 9px; flex: 1; border-radius: 2px; background: var(--accent); animation: mtr 2.4s ease-in-out infinite; }
+.meter i.off { background: var(--border-2); animation: none; }
+.meter i:nth-child(2){animation-delay:.12s} .meter i:nth-child(3){animation-delay:.24s}
+.meter i:nth-child(4){animation-delay:.36s} .meter i:nth-child(5){animation-delay:.48s}
+.meter i:nth-child(6){animation-delay:.6s}  .meter i:nth-child(7){animation-delay:.72s}
+.meter i:nth-child(8){animation-delay:.84s}
+@keyframes mtr { 0%,100% { opacity: .9; } 50% { opacity: .32; } }
+.prow-foot { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 18px; margin-top: 2px; }
 
 /* ---------- Marquee ---------- */
 .marquee { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg-2); overflow: hidden; padding: 16px 0; }
@@ -262,7 +265,7 @@ svg { display: block; }
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-visual { order: -1; margin-bottom: 8px; }
-  .diagram-frame { max-width: 400px; }
+  .panel { max-width: 380px; }
   .nav-links { position: fixed; inset: 0 0 0 auto; width: min(80vw, 340px); flex-direction: column; align-items: flex-start; justify-content: center; gap: 22px;
     background: var(--bg-2); border-left: 1px solid var(--border); padding: 40px; transform: translateX(100%); transition: transform .35s var(--ease); z-index: 850; }
   .nav-links.open { transform: translateX(0); }

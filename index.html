@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=3" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
@@ -72,53 +72,39 @@
           </ul>
         </div>
 
-        <!-- Architecture diagram (signature visual) -->
+        <!-- Domain status panel (signature visual) -->
         <div class="hero-visual" aria-hidden="true">
-          <div class="diagram-frame">
-            <div class="diagram-head">
-              <span class="d-id">architecture.svg</span>
+          <div class="panel">
+            <div class="panel-head">
+              <span class="d-id">system.status</span>
               <span class="d-live"><span class="dot"></span>live</span>
             </div>
-            <svg class="diagram" viewBox="0 0 400 380" role="img">
-              <defs>
-                <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0" stop-color="#38e8b0" stop-opacity="0.1"/>
-                  <stop offset="0.5" stop-color="#38e8b0" stop-opacity="0.9"/>
-                  <stop offset="1" stop-color="#22d3ee" stop-opacity="0.1"/>
-                </linearGradient>
-                <radialGradient id="nodeg" cx="0.5" cy="0.4" r="0.7">
-                  <stop offset="0" stop-color="#132030"/>
-                  <stop offset="1" stop-color="#0b131c"/>
-                </radialGradient>
-              </defs>
-
-              <!-- security perimeter -->
-              <rect class="perimeter" x="18" y="18" width="364" height="344" rx="18"/>
-              <text class="perimeter-label" x="34" y="44">SECURITY PERIMETER · SIEM/SOC</text>
-
-              <!-- edges -->
-              <g class="edges" stroke="url(#edge)" stroke-width="2" fill="none">
-                <path class="edge" d="M96 150 L200 150"/>
-                <path class="edge" d="M248 150 L316 96"/>
-                <path class="edge" d="M248 150 L316 204"/>
-                <path class="edge" d="M200 174 L200 268"/>
-                <path class="edge" d="M224 280 L308 236"/>
-              </g>
-              <!-- traveling pulses -->
-              <g class="pulses" fill="#38e8b0">
-                <circle r="3"><animateMotion dur="2.4s" repeatCount="indefinite" path="M96 150 L200 150"/></circle>
-                <circle r="3" fill="#22d3ee"><animateMotion dur="2.8s" begin="0.6s" repeatCount="indefinite" path="M248 150 L316 96"/></circle>
-                <circle r="3" fill="#fbbf5c"><animateMotion dur="3s" begin="1.1s" repeatCount="indefinite" path="M200 174 L200 268"/></circle>
-              </g>
-
-              <!-- nodes -->
-              <g class="node"><circle cx="72" cy="150" r="26" fill="url(#nodeg)"/><text x="72" y="154">users</text></g>
-              <g class="node hub"><rect x="176" y="126" width="48" height="48" rx="12" fill="url(#nodeg)"/><text x="200" y="154">API</text></g>
-              <g class="node ai"><circle cx="340" cy="96" r="26" fill="url(#nodeg)"/><text x="340" y="100">AI</text></g>
-              <g class="node data"><circle cx="340" cy="204" r="26" fill="url(#nodeg)"/><text x="340" y="208">data</text></g>
-              <g class="node cloud"><rect x="176" y="268" width="48" height="48" rx="12" fill="url(#nodeg)"/><text x="200" y="296">cloud</text></g>
-              <g class="node sec"><circle cx="330" cy="260" r="22" fill="url(#nodeg)"/><text x="330" y="264">🛡</text></g>
-            </svg>
+            <div class="panel-body">
+              <div class="prow">
+                <span class="pl">dev</span>
+                <span class="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i></span>
+                <span class="pt">Java · Py</span>
+              </div>
+              <div class="prow">
+                <span class="pl">cloud</span>
+                <span class="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i></span>
+                <span class="pt">AWS · GCP</span>
+              </div>
+              <div class="prow">
+                <span class="pl">ai</span>
+                <span class="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i><i class="off"></i></span>
+                <span class="pt">LLM · RAG</span>
+              </div>
+              <div class="prow">
+                <span class="pl">security</span>
+                <span class="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="pt">SIEM · SOC</span>
+              </div>
+              <div class="prow prow-foot">
+                <span class="pl">region</span>
+                <span class="pv">BR · global</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -358,6 +344,6 @@
     <p class="footer-note">© <span id="year"></span> Alexandre Tsumanuma · <span data-i18n="footer.note">Arquitetando software seguro e inteligente.</span></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
