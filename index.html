@@ -3,39 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tsumanuma Tech Solutions — Alexandre Tsumanuma</title>
-  <meta name="description" content="Tsumanuma Tech Solutions — Desenvolvimento de software, engenharia, inteligência artificial e cibersegurança. Soluções seguras, inteligentes e escaláveis." />
+  <title>Alexandre Tsumanuma — Cybersecurity Architect</title>
+  <meta name="description" content="Alexandre Tsumanuma — Arquiteto de Cibersegurança e Engenheiro de Software. Arquiteturas em nuvem, IA e segurança. Fundador da Tsumanuma Tech Solutions." />
   <meta name="author" content="Alexandre Tsumanuma" />
 
   <!-- Open Graph / social preview -->
-  <meta property="og:title" content="Tsumanuma Tech Solutions" />
-  <meta property="og:description" content="Software seguro, inteligente e escalável — Dev · Engenharia · IA · Cibersegurança." />
+  <meta property="og:title" content="Alexandre Tsumanuma — Cybersecurity Architect" />
+  <meta property="og:description" content="Arquiteturas em nuvem, IA e segurança — do código à produção. Tsumanuma Tech Solutions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://weyzin.github.io/" />
+  <meta property="og:image" content="https://weyzin.github.io/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2335f0a8'/><stop offset='1' stop-color='%232ce0ff'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text x='50' y='64' font-family='monospace' font-size='38' font-weight='700' fill='%2304140d' text-anchor='middle'>T.T</text></svg>" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
 </head>
 <body>
-  <!-- Progress bar -->
+  <div class="scanlines" aria-hidden="true"></div>
   <div class="scroll-progress" id="scrollProgress"></div>
 
   <!-- Navbar -->
   <header class="nav" id="nav">
-    <a href="#top" class="brand" aria-label="Tsumanuma Tech Solutions">
+    <a href="#top" class="brand" aria-label="Alexandre Tsumanuma">
       <span class="brand-mark">T.T</span>
       <span class="brand-name">Tsumanuma<span class="brand-sub">Tech Solutions</span></span>
     </a>
     <nav class="nav-links" aria-label="Navegação principal">
-      <a href="#services">Serviços</a>
-      <a href="#experience">Trajetória</a>
-      <a href="#work">Projetos</a>
-      <a href="#stack">Stack</a>
-      <a href="#process">Processo</a>
-      <a href="#contact" class="nav-cta">Contato</a>
+      <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+      <a href="#experience" data-i18n="nav.experience">Trajetória</a>
+      <a href="#work" data-i18n="nav.work">Projetos</a>
+      <a href="#stack" data-i18n="nav.stack">Stack</a>
+      <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contato</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Alternar idioma">
+        <span class="lang-opt" data-lang="pt">PT</span><span class="lang-div">/</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -48,44 +54,71 @@
       <div class="hero-grid-bg" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-content">
-          <p class="eyebrow"><span class="dot"></span>Engenheiro de Software · Arquiteto de Cibersegurança</p>
-          <h1 class="hero-title">
-            Software <span class="accent">seguro</span>,<br />
-            inteligente e <span class="accent">escalável</span>.
-          </h1>
-          <p class="hero-lede">
-            Sou <strong>Alexandre Tsumanuma</strong>, fundador da <strong>Tsumanuma Tech Solutions</strong>
-            e Engenheiro de Software no Autoconf. Construo projetos de <strong>IA</strong>, desenho
-            <strong>arquiteturas em nuvem</strong> (AWS/Azure) e soluções seguras — do código à produção.
-            Fora do trabalho, desenvolvo <strong>jogos e RPGs</strong> por hobby.
+          <p class="eyebrow"><span class="dot"></span><span data-i18n="hero.eyebrow">Arquiteto de Cibersegurança · IA · Cloud</span></p>
+          <h1 class="hero-title" data-i18n="hero.title">Desenho sistemas <span class="accent">seguros</span>, inteligentes e <span class="accent">escaláveis</span>.</h1>
+          <p class="hero-lede" data-i18n="hero.lede">
+            Sou <strong>Alexandre Tsumanuma</strong> — Arquiteto de Cibersegurança e Engenheiro de Software com
+            <strong>7+ anos</strong> desenhando arquiteturas em nuvem, integrando IA e protegendo o que importa.
+            Fundador da <strong>Tsumanuma Tech Solutions</strong>.
           </p>
           <div class="hero-actions">
-            <a href="#work" class="btn btn-primary">Ver projetos</a>
-            <a href="#contact" class="btn btn-ghost">Falar comigo</a>
+            <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Vamos conversar</a>
+            <a href="#experience" class="btn btn-ghost" data-i18n="hero.cta2">Ver trajetória</a>
           </div>
           <ul class="hero-stats">
-            <li><strong>7+</strong><span>anos de experiência</span></li>
-            <li><strong>5</strong><span>idiomas</span></li>
-            <li><strong>3</strong><span>pós-graduações</span></li>
+            <li><strong>7+</strong><span data-i18n="hero.stat1">anos de experiência</span></li>
+            <li><strong>6</strong><span data-i18n="hero.stat2">idiomas</span></li>
+            <li><strong>3</strong><span data-i18n="hero.stat3">pós-graduações</span></li>
           </ul>
         </div>
+
+        <!-- Architecture diagram (signature visual) -->
         <div class="hero-visual" aria-hidden="true">
-          <!-- Terminal decorativo -->
-          <div class="terminal">
-            <div class="terminal-bar">
-              <span></span><span></span><span></span>
-              <p>tsumanuma@tech: ~</p>
+          <div class="diagram-frame">
+            <div class="diagram-head">
+              <span class="d-id">architecture.svg</span>
+              <span class="d-live"><span class="dot"></span>live</span>
             </div>
-            <pre class="terminal-body"><code><span class="t-c">$</span> whoami
-<span class="t-o">alexandre.tsumanuma</span>
-<span class="t-c">$</span> cat perfil.json
-{
-  <span class="t-k">"empresa"</span>: <span class="t-s">"Tsumanuma Tech Solutions"</span>,
-  <span class="t-k">"cargo"</span>: <span class="t-s">"Software Engineer @ Autoconf"</span>,
-  <span class="t-k">"stack"</span>: [<span class="t-s">"C#"</span>, <span class="t-s">"Python"</span>, <span class="t-s">"AWS"</span>],
-  <span class="t-k">"focos"</span>: [<span class="t-s">"IA"</span>, <span class="t-s">"arquitetura"</span>, <span class="t-s">"cibersegurança"</span>]
-}
-<span class="t-c">$</span> <span class="cursor">▋</span></code></pre>
+            <svg class="diagram" viewBox="0 0 400 380" role="img">
+              <defs>
+                <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#38e8b0" stop-opacity="0.1"/>
+                  <stop offset="0.5" stop-color="#38e8b0" stop-opacity="0.9"/>
+                  <stop offset="1" stop-color="#22d3ee" stop-opacity="0.1"/>
+                </linearGradient>
+                <radialGradient id="nodeg" cx="0.5" cy="0.4" r="0.7">
+                  <stop offset="0" stop-color="#132030"/>
+                  <stop offset="1" stop-color="#0b131c"/>
+                </radialGradient>
+              </defs>
+
+              <!-- security perimeter -->
+              <rect class="perimeter" x="18" y="18" width="364" height="344" rx="18"/>
+              <text class="perimeter-label" x="34" y="44">SECURITY PERIMETER · SIEM/SOC</text>
+
+              <!-- edges -->
+              <g class="edges" stroke="url(#edge)" stroke-width="2" fill="none">
+                <path class="edge" d="M96 150 L200 150"/>
+                <path class="edge" d="M248 150 L316 96"/>
+                <path class="edge" d="M248 150 L316 204"/>
+                <path class="edge" d="M200 174 L200 268"/>
+                <path class="edge" d="M224 280 L308 236"/>
+              </g>
+              <!-- traveling pulses -->
+              <g class="pulses" fill="#38e8b0">
+                <circle r="3"><animateMotion dur="2.4s" repeatCount="indefinite" path="M96 150 L200 150"/></circle>
+                <circle r="3" fill="#22d3ee"><animateMotion dur="2.8s" begin="0.6s" repeatCount="indefinite" path="M248 150 L316 96"/></circle>
+                <circle r="3" fill="#fbbf5c"><animateMotion dur="3s" begin="1.1s" repeatCount="indefinite" path="M200 174 L200 268"/></circle>
+              </g>
+
+              <!-- nodes -->
+              <g class="node"><circle cx="72" cy="150" r="26" fill="url(#nodeg)"/><text x="72" y="154">users</text></g>
+              <g class="node hub"><rect x="176" y="126" width="48" height="48" rx="12" fill="url(#nodeg)"/><text x="200" y="154">API</text></g>
+              <g class="node ai"><circle cx="340" cy="96" r="26" fill="url(#nodeg)"/><text x="340" y="100">AI</text></g>
+              <g class="node data"><circle cx="340" cy="204" r="26" fill="url(#nodeg)"/><text x="340" y="208">data</text></g>
+              <g class="node cloud"><rect x="176" y="268" width="48" height="48" rx="12" fill="url(#nodeg)"/><text x="200" y="296">cloud</text></g>
+              <g class="node sec"><circle cx="330" cy="260" r="22" fill="url(#nodeg)"/><text x="330" y="264">🛡</text></g>
+            </svg>
           </div>
         </div>
       </div>
@@ -94,225 +127,227 @@
     <!-- MARQUEE -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>CODE ✦ SECURE ✦ AUTOMATE ✦ DEPLOY ✦ CODE ✦ SECURE ✦ AUTOMATE ✦ DEPLOY ✦</span>
-        <span>CODE ✦ SECURE ✦ AUTOMATE ✦ DEPLOY ✦ CODE ✦ SECURE ✦ AUTOMATE ✦ DEPLOY ✦</span>
+        <span>ARCHITECT ✦ SECURE ✦ AUTOMATE ✦ SHIP ✦ ARCHITECT ✦ SECURE ✦ AUTOMATE ✦ SHIP ✦</span>
+        <span>ARCHITECT ✦ SECURE ✦ AUTOMATE ✦ SHIP ✦ ARCHITECT ✦ SECURE ✦ AUTOMATE ✦ SHIP ✦</span>
       </div>
     </div>
 
-    <!-- SERVICES -->
-    <section class="section" id="services">
+    <!-- EXPERTISE -->
+    <section class="section" id="expertise">
       <div class="section-head reveal">
-        <p class="section-tag">✦ O que faço</p>
-        <h2>Soluções de ponta a ponta</h2>
-        <p class="section-sub">Da concepção à produção — com segurança e inteligência em cada camada.</p>
+        <p class="section-tag"><span class="idx">01</span> <span data-i18n="exp.tag">EXPERTISE</span></p>
+        <h2 data-i18n="exp.h">Do código à nuvem, com segurança em cada camada</h2>
       </div>
       <div class="cards">
         <article class="card reveal">
           <div class="card-icon">&lt;/&gt;</div>
-          <h3>Desenvolvimento de Software</h3>
-          <p>Aplicações web e APIs robustas com Java, C#, PHP/Laravel e Python. Código limpo, testável e mantível.</p>
+          <h3 data-i18n="exp.c1t">Engenharia de Software</h3>
+          <p data-i18n="exp.c1p">Aplicações e APIs robustas em Java, C#, Python e PHP/Laravel. Código limpo, testável e feito para durar.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">☁</div>
-          <h3>Arquitetura &amp; Cloud</h3>
-          <p>Arquiteturas escaláveis e seguras em AWS e Azure. Infraestrutura como código com Terraform e automação de deploy.</p>
+          <h3 data-i18n="exp.c2t">Arquitetura &amp; Cloud</h3>
+          <p data-i18n="exp.c2p">Arquiteturas escaláveis e seguras em AWS, Azure e Google Cloud, com infraestrutura como código (Terraform) e automação de deploy.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">✷</div>
-          <h3>Inteligência Artificial</h3>
-          <p>Soluções com LLMs, RAG e agentes, do protótipo à produção. Testes de BIAS para avaliar justiça e robustez dos modelos, com segurança dos dados em cada etapa.</p>
+          <h3 data-i18n="exp.c3t">Inteligência Artificial</h3>
+          <p data-i18n="exp.c3p">LLMs, RAG e agentes em produção — com testes de BIAS para avaliar justiça e robustez dos modelos, e dados protegidos.</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">🛡</div>
-          <h3>Cibersegurança</h3>
-          <p>Desenvolvimento seguro, hardening de ambientes cloud e monitoramento contínuo com SIEM e NOC.</p>
+          <h3 data-i18n="exp.c4t">Cibersegurança</h3>
+          <p data-i18n="exp.c4p">Desenvolvimento seguro, hardening de ambientes cloud e monitoramento contínuo com SIEM e SOC.</p>
         </article>
       </div>
     </section>
 
-    <!-- EXPERIENCE / TRAJETÓRIA -->
+    <!-- EXPERIENCE -->
     <section class="section" id="experience">
       <div class="section-head reveal">
-        <p class="section-tag">✦ Trajetória</p>
-        <h2>Experiência</h2>
-        <p class="section-sub">Mais de 7 anos entre desenvolvimento, arquitetura de software e cibersegurança.</p>
+        <p class="section-tag"><span class="idx">02</span> <span data-i18n="xp.tag">TRAJETÓRIA</span></p>
+        <h2 data-i18n="xp.h">Experiência</h2>
+        <p class="section-sub" data-i18n="xp.sub">Mais de 7 anos entre desenvolvimento, arquitetura de software e cibersegurança.</p>
       </div>
 
       <ol class="timeline">
         <li class="reveal">
-          <span class="tl-date">2025 — Atual</span>
+          <span class="tl-date">2025 — <span data-i18n="xp.now">Atual</span></span>
           <div class="tl-body">
-            <h3>Engenheiro de Software <span class="tl-org">· Autoconf</span></h3>
-            <p>Projetos de IA, desenho de arquiteturas de software, infraestrutura em AWS e cibersegurança.</p>
+            <h3><span data-i18n="xp.j1r">Engenheiro de Software</span> <span class="tl-org">· Autoconf</span></h3>
+            <p data-i18n="xp.j1p">Desenvolvimento de agentes de conversação para o setor automotivo em Python; planejamento de arquitetura, padrões de código e revisão de PRs. Features em PHP/Laravel com foco em performance e escalabilidade, infraestrutura em AWS, Azure e GCP, containerização (Docker), CI/CD e telemetria com OpenTelemetry.</p>
           </div>
         </li>
         <li class="reveal">
           <span class="tl-date">2021 — 2025</span>
           <div class="tl-body">
             <h3>CITS <span class="tl-org">· Centro Internacional de Tecnologia de Software</span></h3>
-            <p class="tl-note">Trajetória de ~4 anos, com evolução de desenvolvedor a arquiteto de cibersegurança:</p>
+            <p class="tl-note" data-i18n="xp.j2note">Trajetória de ~4 anos, com evolução de desenvolvedor a arquiteto de cibersegurança:</p>
             <ul class="tl-roles">
-              <li><strong>Arquiteto de Cibersegurança</strong> — arquitetura de software em nuvem, definição de requisitos de segurança, testes de BIAS em modelos de IA, SIEM/NOC e revisão de scripts Terraform e Azure.</li>
-              <li><strong>Desenvolvedor Sênior — Java</strong> — desenvolvimento de aplicações robustas e liderança técnica, com foco crescente em segurança.</li>
-              <li><strong>Desenvolvedor Pleno</strong> — desenvolvimento full stack e evolução de sistemas em produção.</li>
+              <li><strong data-i18n="xp.j2r1">Arquiteto de Cibersegurança</strong> <span data-i18n="xp.j2p1">— arquitetura de software em nuvem, requisitos de segurança, testes de BIAS em modelos de IA, SIEM/NOC e revisão de scripts Terraform e Azure.</span></li>
+              <li><strong data-i18n="xp.j2r2">Desenvolvedor Sênior — Java</strong> <span data-i18n="xp.j2p2">— desenvolvimento de aplicações robustas e liderança técnica, com foco crescente em segurança.</span></li>
+              <li><strong data-i18n="xp.j2r3">Desenvolvedor Pleno</strong> <span data-i18n="xp.j2p3">— desenvolvimento full stack e evolução de sistemas em produção.</span></li>
             </ul>
           </div>
         </li>
         <li class="reveal">
           <span class="tl-date">2020 — 2021</span>
           <div class="tl-body">
-            <h3>Desenvolvedor Júnior <span class="tl-org">· Grunitzky</span></h3>
-            <p>Aplicações web e testes automatizados com PHP e Laravel, APIs REST e manutenção de bancos SQL.</p>
+            <h3><span data-i18n="xp.j3r">Desenvolvedor Júnior</span> <span class="tl-org">· Grunitzky</span></h3>
+            <p data-i18n="xp.j3p">Aplicações web e testes automatizados com PHP e Laravel, APIs REST e manutenção de bancos SQL.</p>
           </div>
         </li>
         <li class="reveal">
           <span class="tl-date">2019 — 2020</span>
           <div class="tl-body">
-            <h3>Desenvolvedor Full Stack <span class="tl-org">· YouDO Brasil</span></h3>
-            <p>Aplicações web com PHP/Laravel, APIs REST, soluções IoT em Python para controle de acesso e quiosques interativos em C#.</p>
+            <h3><span data-i18n="xp.j4r">Desenvolvedor Full Stack</span> <span class="tl-org">· YouDO Brasil</span></h3>
+            <p data-i18n="xp.j4p">Aplicações web com PHP/Laravel, APIs REST, soluções IoT em Python para controle de acesso e quiosques interativos em C#.</p>
           </div>
         </li>
       </ol>
 
       <div class="extra-grid">
         <div class="reveal">
-          <h3 class="extra-title">Formação</h3>
+          <h3 class="extra-title" data-i18n="xp.edu">Formação</h3>
           <ul class="extra-list">
-            <li><strong>Pós — Engenharia de Software em IA Aplicada</strong><span>UNIPDS · cursando</span></li>
-            <li><strong>Pós — Redes e Cibersegurança</strong><span>Hackone · 2023</span></li>
-            <li><strong>Pós — Arquitetura de Software, Data Science e Cibersegurança</strong><span>PUC-PR · 2021–2022</span></li>
-            <li><strong>Bacharelado — Análise e Desenvolvimento de Sistemas</strong><span>Universidade Positivo · 2018–2020</span></li>
+            <li><strong data-i18n="xp.edu1">Pós — Engenharia de Software em IA Aplicada</strong><span>UNIPDS · <span data-i18n="xp.cursando">cursando</span></span></li>
+            <li><strong data-i18n="xp.edu2">Pós — Redes e Cibersegurança</strong><span>Hackone · 2023</span></li>
+            <li><strong data-i18n="xp.edu3">Pós — Arquitetura de Software, Data Science e Cibersegurança</strong><span>PUC-PR · 2021–2022</span></li>
+            <li><strong data-i18n="xp.edu4">Bacharelado — Análise e Desenvolvimento de Sistemas</strong><span>Universidade Positivo · 2018–2020</span></li>
           </ul>
         </div>
         <div class="reveal">
-          <h3 class="extra-title">Idiomas</h3>
-          <ul class="lang-list">
-            <li>🇧🇷 Português <span>Nativo</span></li>
-            <li>🇬🇧 Inglês <span>C1</span></li>
-            <li>🇪🇸 Espanhol <span>B1</span></li>
-            <li>🇯🇵 Japonês <span>B1</span></li>
-            <li>🇨🇳 Chinês <span>B1</span></li>
-            <li>🇰🇷 Coreano <span>A2</span></li>
-          </ul>
+          <h3 class="extra-title" data-i18n="xp.hobby">Além do código</h3>
+          <p class="hobby-text" data-i18n="xp.hobbyp">Nas horas vagas, desenvolvo <strong>jogos e RPGs</strong> — um laboratório pessoal pra experimentar sistemas, narrativa e novas tecnologias.</p>
         </div>
       </div>
     </section>
 
-    <!-- WORK / PROJECTS -->
+    <!-- WORK -->
     <section class="section" id="work">
       <div class="section-head reveal">
-        <p class="section-tag">✦ Selected Works</p>
-        <h2>Projetos</h2>
-        <p class="section-sub">
-          Uma amostra dos <strong>muitos projetos</strong> dos quais participei ao longo da carreira. Os
-          repositórios são privados — aqui vai o que entreguei e a stack envolvida.
-          <!-- [EDITAR] ajuste as descrições como preferir -->
-        </p>
+        <p class="section-tag"><span class="idx">03</span> <span data-i18n="wk.tag">PROJETOS</span></p>
+        <h2 data-i18n="wk.h">Seleção de projetos</h2>
+        <p class="section-sub" data-i18n="wk.sub">Uma amostra dos <strong>muitos projetos</strong> dos quais participei. Os repositórios são privados — aqui vai o que entreguei e a stack envolvida.</p>
       </div>
       <div class="projects">
         <article class="project reveal">
           <div class="project-index">01</div>
           <div class="project-body">
-            <h3>Plataforma de IA com testes de BIAS</h3>
-            <p>Participei do desenvolvimento e da segurança de modelos de IA, com testes de BIAS para avaliar justiça e robustez, além da proteção dos dados usados nas fases de teste.</p>
-            <div class="project-tags"><span>Python</span><span>IA / ML</span><span>Segurança de dados</span></div>
+            <h3 data-i18n="wk.p1t">Plataforma de IA com testes de BIAS</h3>
+            <p data-i18n="wk.p1p">Desenvolvimento e segurança de modelos de IA, com testes de BIAS para avaliar justiça e robustez, e proteção dos dados usados nas fases de teste.</p>
+            <div class="project-tags"><span>Python</span><span>IA / ML</span><span data-i18n="wk.p1tag">Segurança de dados</span></div>
           </div>
         </article>
-
         <article class="project reveal">
           <div class="project-index">02</div>
           <div class="project-body">
-            <h3>Arquitetura de Nuvem Segura</h3>
-            <p>Desenho de arquiteturas escaláveis e seguras, configuração de segurança de ambientes cloud e monitoramento contínuo com soluções de SIEM e NOC.</p>
+            <h3 data-i18n="wk.p2t">Arquitetura de Nuvem Segura</h3>
+            <p data-i18n="wk.p2p">Desenho de arquiteturas escaláveis e seguras, configuração de segurança de ambientes cloud e monitoramento contínuo com SIEM e NOC.</p>
             <div class="project-tags"><span>AWS / Azure</span><span>Terraform</span><span>SIEM / NOC</span></div>
           </div>
         </article>
-
         <article class="project reveal">
           <div class="project-index">03</div>
           <div class="project-body">
-            <h3>Controle de Acesso IoT</h3>
-            <p>Solução IoT em Python para controle de acesso a ambientes via identificação digital, integrada a sistemas web e APIs REST.</p>
+            <h3 data-i18n="wk.p3t">Controle de Acesso IoT</h3>
+            <p data-i18n="wk.p3p">Solução IoT em Python para controle de acesso a ambientes via identificação digital, integrada a sistemas web e APIs REST.</p>
             <div class="project-tags"><span>Python</span><span>IoT</span><span>REST API</span></div>
           </div>
         </article>
-
         <article class="project reveal">
           <div class="project-index">04</div>
           <div class="project-body">
-            <h3>Quiosques Interativos</h3>
-            <p>Quiosques de automação de compras desenvolvidos em C#, com interface interativa e integração a sistemas de pagamento.</p>
-            <div class="project-tags"><span>C#</span><span>Automação</span></div>
+            <h3 data-i18n="wk.p4t">Quiosques Interativos</h3>
+            <p data-i18n="wk.p4p">Quiosques de automação de compras em C#, com interface interativa e integração a sistemas de pagamento.</p>
+            <div class="project-tags"><span>C#</span><span data-i18n="wk.p4tag">Automação</span></div>
           </div>
         </article>
       </div>
-      <p class="projects-more reveal">+ diversos outros projetos ao longo de 7+ anos de carreira.</p>
+      <p class="projects-more reveal" data-i18n="wk.more">+ diversos outros projetos ao longo de 7+ anos de carreira.</p>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section class="section" id="languages">
+      <div class="section-head reveal">
+        <p class="section-tag"><span class="idx">04</span> <span data-i18n="lg.tag">IDIOMAS</span></p>
+        <h2 data-i18n="lg.h">Construo para um mundo global</h2>
+        <p class="section-sub" data-i18n="lg.sub">Seis idiomas — do português nativo ao japonês, chinês e coreano.</p>
+      </div>
+      <ul class="polyglot reveal">
+        <li><span class="pg-native">Português</span><div class="pg-meta"><span class="pg-name" data-i18n="lg.pt">Português</span><span class="pg-lvl" data-i18n="lg.native">Nativo</span></div></li>
+        <li><span class="pg-native">English</span><div class="pg-meta"><span class="pg-name" data-i18n="lg.en">Inglês</span><span class="pg-lvl">C1</span></div></li>
+        <li><span class="pg-native">Español</span><div class="pg-meta"><span class="pg-name" data-i18n="lg.es">Espanhol</span><span class="pg-lvl">B1</span></div></li>
+        <li><span class="pg-native">日本語</span><div class="pg-meta"><span class="pg-name" data-i18n="lg.ja">Japonês</span><span class="pg-lvl">B1</span></div></li>
+        <li><span class="pg-native">中文</span><div class="pg-meta"><span class="pg-name" data-i18n="lg.zh">Chinês</span><span class="pg-lvl">B1</span></div></li>
+        <li><span class="pg-native">한국어</span><div class="pg-meta"><span class="pg-name" data-i18n="lg.ko">Coreano</span><span class="pg-lvl">A2</span></div></li>
+      </ul>
     </section>
 
     <!-- STACK -->
     <section class="section" id="stack">
       <div class="section-head reveal">
-        <p class="section-tag">✦ Toolkit</p>
-        <h2>Tecnologias &amp; ferramentas</h2>
+        <p class="section-tag"><span class="idx">05</span> <span data-i18n="st.tag">STACK</span></p>
+        <h2 data-i18n="st.h">Tecnologias &amp; ferramentas</h2>
       </div>
-      <ul class="stack-list reveal">
-        <li>Java</li>
-        <li>C#</li>
-        <li>Python</li>
-        <li>PHP</li>
-        <li>Laravel</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>SQL</li>
-        <li>NoSQL</li>
-        <li>AWS</li>
-        <li>Azure</li>
-        <li>Terraform</li>
-        <li>Docker</li>
-        <li>Linux</li>
-        <li>macOS</li>
-        <li>IA / LLMs</li>
-        <li>RAG</li>
-        <li>AI Agents</li>
-        <li>Machine Learning</li>
-        <li>SIEM / SOC</li>
-        <!-- [EDITAR] troque/adicione as ferramentas de SOC/SIEM que você usa (ex: Splunk, Wazuh, Sentinel, QRadar) -->
-        <li>Splunk</li>
-        <li>Wazuh</li>
-        <li>IoT</li>
-        <li>REST APIs</li>
-        <li>Git</li>
-      </ul>
+      <div class="stack-grid reveal">
+        <div class="stack-group">
+          <h4 data-i18n="st.g1">Linguagens</h4>
+          <ul class="stack-list"><li>Java</li><li>C#</li><li>Python</li><li>PHP</li><li>JavaScript</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4 data-i18n="st.g2">Cloud &amp; Infra</h4>
+          <ul class="stack-list"><li>AWS</li><li>Google Cloud</li><li>Azure</li><li>Cloudflare</li><li>Terraform</li><li>Docker</li><li>OpenTelemetry</li><li>Sentry</li><li>Linux</li><li>macOS</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4 data-i18n="st.g3">IA</h4>
+          <ul class="stack-list"><li>LLMs</li><li>RAG</li><li>AI Agents</li><li>Machine Learning</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4 data-i18n="st.g4">Segurança</h4>
+          <!-- [EDITAR] troque/adicione as ferramentas de SOC/SIEM que você usa -->
+          <ul class="stack-list"><li>SIEM / SOC</li><li>Splunk</li><li>Wazuh</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4 data-i18n="st.g5">Web &amp; Dados</h4>
+          <ul class="stack-list"><li>React</li><li>Laravel</li><li>SQL</li><li>NoSQL</li><li>REST APIs</li><li>Git</li></ul>
+        </div>
+      </div>
     </section>
 
     <!-- PROCESS -->
     <section class="section" id="process">
       <div class="section-head reveal">
-        <p class="section-tag">✦ Meu processo</p>
-        <h2>Como eu trabalho</h2>
+        <p class="section-tag"><span class="idx">06</span> <span data-i18n="pr.tag">PROCESSO</span></p>
+        <h2 data-i18n="pr.h">Como eu trabalho</h2>
       </div>
       <ol class="process">
-        <li class="reveal"><span class="step-num">01</span><h3>Descobrir</h3><p>Entendo o problema, o contexto e os requisitos — funcionais e de segurança — antes de escrever qualquer linha.</p></li>
-        <li class="reveal"><span class="step-num">02</span><h3>Planejar</h3><p>Defino arquitetura, stack e um roadmap claro, priorizando o que gera valor.</p></li>
-        <li class="reveal"><span class="step-num">03</span><h3>Desenvolver</h3><p>Construo com código limpo, testes e práticas de desenvolvimento seguro.</p></li>
-        <li class="reveal"><span class="step-num">04</span><h3>Entregar</h3><p>Deploy automatizado, monitoramento e suporte contínuo em produção.</p></li>
+        <li class="reveal"><span class="step-num">01</span><h3 data-i18n="pr.s1t">Descobrir</h3><p data-i18n="pr.s1p">Entendo o problema, o contexto e os requisitos — funcionais e de segurança — antes de escrever qualquer linha.</p></li>
+        <li class="reveal"><span class="step-num">02</span><h3 data-i18n="pr.s2t">Arquitetar</h3><p data-i18n="pr.s2p">Defino arquitetura, stack e um roadmap claro, priorizando escalabilidade, segurança e o que gera valor.</p></li>
+        <li class="reveal"><span class="step-num">03</span><h3 data-i18n="pr.s3t">Construir</h3><p data-i18n="pr.s3p">Desenvolvo com código limpo, testes e práticas de desenvolvimento seguro.</p></li>
+        <li class="reveal"><span class="step-num">04</span><h3 data-i18n="pr.s4t">Entregar</h3><p data-i18n="pr.s4p">Deploy automatizado, monitoramento contínuo e suporte em produção.</p></li>
       </ol>
     </section>
 
     <!-- CONTACT -->
     <section class="section contact" id="contact">
       <div class="contact-inner reveal">
-        <p class="section-tag">✦ Vamos conversar</p>
-        <h2>Tem um projeto em mente?</h2>
-        <p class="section-sub">Do MVP à solução em produção — vamos construir algo seguro e inteligente juntos.</p>
-        <!-- [EDITAR] remova o WhatsApp se não quiser o telefone público -->
-        <a href="https://wa.me/5541995064366" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Solicitar orçamento</a>
+        <p class="section-tag centered"><span class="idx">07</span> <span data-i18n="ct.tag">CONTATO</span></p>
+        <h2 data-i18n="ct.h">Tem um desafio técnico em mente?</h2>
+        <p class="section-sub" data-i18n="ct.sub">Arquitetura, IA ou segurança — vamos construir algo sólido juntos.</p>
+        <div class="contact-actions">
+          <a href="mailto:alexandretsumanuma@outlook.com" class="btn btn-primary btn-lg" data-i18n="ct.cta">Vamos conversar</a>
+          <a href="assets/cv-pt.pdf" id="cvLink" class="btn btn-ghost btn-lg" download data-i18n="ct.cv">Baixar CV ↓</a>
+        </div>
         <div class="socials">
           <a href="https://github.com/weyzin" target="_blank" rel="noopener">GitHub</a>
           <span aria-hidden="true">·</span>
           <a href="https://www.linkedin.com/in/alexandre-tsumanuma/" target="_blank" rel="noopener">LinkedIn</a>
           <span aria-hidden="true">·</span>
           <a href="mailto:alexandretsumanuma@outlook.com">E-mail</a>
+          <span aria-hidden="true">·</span>
+          <!-- [EDITAR] remova o WhatsApp se não quiser o telefone público -->
+          <a href="https://wa.me/5541995064366" target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
     </section>
@@ -320,7 +355,7 @@
 
   <footer class="footer">
     <p><span class="brand-mark small">T.T</span> Tsumanuma Tech Solutions</p>
-    <p class="footer-note">© <span id="year"></span> Alexandre Tsumanuma · Building secure &amp; intelligent software.</p>
+    <p class="footer-note">© <span id="year"></span> Alexandre Tsumanuma · <span data-i18n="footer.note">Arquitetando software seguro e inteligente.</span></p>
   </footer>
 
   <script src="script.js"></script>

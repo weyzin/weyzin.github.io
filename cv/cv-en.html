@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Alexandre Tsumanuma — Resume</title>
+<style>
+  :root{
+    --ink:#14181f; --body:#3a4453; --muted:#6b7787; --line:#e3e8ef;
+    --accent:#0ea5a0; --accent-2:#1cc8d6; --bg-soft:#f5f8fa;
+    --mono:"SFMono-Regular",Menlo,Consolas,monospace;
+    --sans:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:#e9edf1;color:var(--body);font-family:var(--sans);line-height:1.5;}
+  .page{max-width:820px;margin:24px auto;background:#fff;padding:44px 48px;box-shadow:0 10px 40px rgba(0,0,0,.12);}
+  h1,h2,h3{margin:0;color:var(--ink);line-height:1.15;}
+  a{color:var(--accent);text-decoration:none;}
+
+  .head{display:flex;align-items:center;gap:20px;padding-bottom:22px;border-bottom:2px solid var(--line);}
+  .mark{flex:none;width:66px;height:66px;border-radius:16px;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#04201e;
+    font-family:var(--mono);font-weight:700;font-size:1.3rem;}
+  .head-main{flex:1;}
+  .head-main h1{font-size:2rem;letter-spacing:-.02em;}
+  .role{color:var(--accent);font-weight:600;font-size:1.02rem;margin-top:2px;}
+  .contact{margin-top:10px;display:flex;flex-wrap:wrap;gap:4px 16px;font-size:.82rem;color:var(--muted);font-family:var(--mono);}
+  .contact span{white-space:nowrap;}
+  .contact a{color:inherit;text-decoration:none;}
+  .contact a:hover{color:var(--accent);}
+
+  .body{display:flex;gap:34px;margin-top:26px;}
+  .main{flex:1.9;min-width:0;}
+  .side{flex:1;min-width:0;}
+  .sec{margin-bottom:24px;break-inside:avoid;}
+  .sec-t{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+    padding-bottom:7px;margin-bottom:14px;border-bottom:1px solid var(--line);}
+  .summary{font-size:.92rem;color:var(--body);margin:0;}
+
+  .job{margin-bottom:18px;break-inside:avoid;}
+  .job-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;}
+  .job-h h3{font-size:1rem;}
+  .job-date{font-family:var(--mono);font-size:.74rem;color:var(--muted);white-space:nowrap;}
+  .job-org{color:var(--accent);font-weight:600;font-size:.88rem;margin:1px 0 3px;}
+  .job-path{font-size:.78rem;color:var(--muted);font-style:italic;margin:0 0 6px;}
+  ul.pts{margin:6px 0 0;padding-left:16px;}
+  ul.pts li{font-size:.85rem;margin-bottom:3px;color:var(--body);}
+
+  .skill-group{margin-bottom:13px;}
+  .skill-group h4{font-size:.8rem;color:var(--ink);margin:0 0 5px;}
+  .tags{display:flex;flex-wrap:wrap;gap:5px;}
+  .tags span{font-family:var(--mono);font-size:.7rem;background:var(--bg-soft);border:1px solid var(--line);
+    color:var(--body);border-radius:5px;padding:2px 7px;}
+  .langs li,.edu li{list-style:none;margin-bottom:9px;}
+  .langs ul,.edu ul{margin:0;padding:0;}
+  .lang-row{display:flex;justify-content:space-between;font-size:.84rem;}
+  .lang-row b{color:var(--ink);font-weight:600;}
+  .lang-row span{font-family:var(--mono);font-size:.72rem;color:var(--accent);}
+  .edu li b{display:block;font-size:.84rem;color:var(--ink);font-weight:600;}
+  .edu li span{font-size:.76rem;color:var(--muted);font-family:var(--mono);}
+
+  @media print{
+    html,body{background:#fff;}
+    .page{margin:0;max-width:none;box-shadow:none;padding:0;}
+    @page{size:A4;margin:14mm;}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="head">
+    <div class="mark">T.T</div>
+    <div class="head-main">
+      <h1>Alexandre Tsumanuma</h1>
+      <div class="role">Cybersecurity Architect · Software Engineer</div>
+      <div class="contact">
+        <span>Curitiba, PR — Brazil</span>
+        <span>alexandretsumanuma@outlook.com</span>
+        <span>+55 41 99506-4366</span>
+        <span><a href="https://weyzin.github.io" target="_blank" rel="noopener">weyzin.github.io</a></span>
+        <span><a href="https://www.linkedin.com/in/alexandre-tsumanuma" target="_blank" rel="noopener">linkedin.com/in/alexandre-tsumanuma</a></span>
+        <span><a href="https://github.com/weyzin" target="_blank" rel="noopener">github.com/weyzin</a></span>
+      </div>
+    </div>
+  </header>
+
+  <div class="body">
+    <div class="main">
+      <section class="sec">
+        <div class="sec-t">Summary</div>
+        <p class="summary">Cybersecurity Architect and Software Engineer with 7+ years of experience,
+        specialized in bringing together cloud architecture, artificial intelligence and security to deliver
+        scalable, reliable systems. Grew from developer to architect, with technical leadership and end-to-end
+        work — development (Java, C#, Python, PHP), cloud (AWS, Azure, GCP), AI (LLMs, RAG, agents) and
+        security (SIEM/SOC and secure development).</p>
+      </section>
+
+      <section class="sec">
+        <div class="sec-t">Experience</div>
+
+        <div class="job">
+          <div class="job-h"><h3>Software Engineer</h3><span class="job-date">Sep 2025 — Present</span></div>
+          <div class="job-org">Autoconf</div>
+          <ul class="pts">
+            <li>Build conversational agents in Python for the automotive sector, automating previously manual interactions.</li>
+            <li>Define architecture and code standards and lead PR review and approval across the team.</li>
+            <li>Deliver and maintain features in PHP/Laravel, ensuring performance, scalability and code quality.</li>
+            <li>Evolve infrastructure across AWS, Azure and Google Cloud, with containerization (Docker) and CI/CD pipelines.</li>
+            <li>Expanded observability with OpenTelemetry, cutting incident diagnosis time by ~30%.</li>
+            <li>Collaborate with cross-functional teams to improve reliability and deployment workflows.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-h"><h3>Cybersecurity Architect</h3><span class="job-date">Aug 2021 — Apr 2025</span></div>
+          <div class="job-org">CITS — Centro Internacional de Tecnologia de Software</div>
+          <p class="job-path">Progression: Mid-level Developer → Senior Developer (Java) → Cybersecurity Architect</p>
+          <ul class="pts">
+            <li>Architected scalable, secure cloud software solutions that supported the growth of multiple production products.</li>
+            <li>Implemented and managed SIEM and NOC solutions for continuous monitoring, cutting incident detection time by ~40%.</li>
+            <li>Mentored developers on architecture and security, raising the team's technical maturity and autonomy.</li>
+            <li>Defined cybersecurity requirements and testing protocols that became a reference for new projects.</li>
+            <li>Ran BIAS testing on AI models to ensure fairness and robustness, securing data and models.</li>
+            <li>Strengthened infrastructure security posture by reviewing Terraform scripts and Azure configurations.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-h"><h3>Junior Developer</h3><span class="job-date">Mar 2020 — May 2021</span></div>
+          <div class="job-org">Grunitzky — Audit | Consulting | Training</div>
+          <ul class="pts">
+            <li>Developed web applications and automated tests using PHP and Laravel.</li>
+            <li>Built and maintained REST APIs for system integration.</li>
+            <li>Modeled and maintained SQL databases.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-h"><h3>Full Stack Developer</h3><span class="job-date">Sep 2019 — Mar 2020</span></div>
+          <div class="job-org">YouDO Brasil</div>
+          <ul class="pts">
+            <li>Developed web applications with PHP and Laravel and REST APIs for system integration.</li>
+            <li>Implemented IoT solutions in Python for room access control via digital identification.</li>
+            <li>Created interactive kiosks in C# for purchase automation.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section class="sec">
+        <div class="sec-t">Skills</div>
+        <div class="skill-group"><h4>Languages</h4><div class="tags"><span>Java</span><span>C#</span><span>Python</span><span>PHP</span><span>JavaScript</span></div></div>
+        <div class="skill-group"><h4>Cloud &amp; Infra</h4><div class="tags"><span>AWS</span><span>Google Cloud</span><span>Azure</span><span>Cloudflare</span><span>Terraform</span><span>Docker</span><span>OpenTelemetry</span><span>Sentry</span><span>Linux</span></div></div>
+        <div class="skill-group"><h4>AI</h4><div class="tags"><span>LLMs</span><span>RAG</span><span>AI Agents</span><span>Machine Learning</span><span>BIAS testing</span></div></div>
+        <div class="skill-group"><h4>Security</h4><div class="tags"><span>SIEM / SOC</span><span>Secure development</span><span>Cloud hardening</span></div></div>
+        <div class="skill-group"><h4>Web &amp; Data</h4><div class="tags"><span>React</span><span>Laravel</span><span>SQL</span><span>NoSQL</span><span>REST APIs</span><span>CI/CD</span><span>Git</span></div></div>
+      </section>
+
+      <section class="sec edu">
+        <div class="sec-t">Certifications</div>
+        <ul>
+          <li><b>Microsoft Certified: Azure AI Fundamentals</b><span>AI-900</span></li>
+        </ul>
+      </section>
+
+      <section class="sec langs">
+        <div class="sec-t">Languages</div>
+        <ul>
+          <li class="lang-row"><b>Portuguese</b><span>Native</span></li>
+          <li class="lang-row"><b>English</b><span>C1</span></li>
+          <li class="lang-row"><b>Spanish</b><span>B1</span></li>
+          <li class="lang-row"><b>Japanese</b><span>B1</span></li>
+          <li class="lang-row"><b>Chinese</b><span>B1</span></li>
+          <li class="lang-row"><b>Korean</b><span>A2</span></li>
+        </ul>
+      </section>
+
+      <section class="sec edu">
+        <div class="sec-t">Education</div>
+        <ul>
+          <li><b>Postgrad — Software Engineering in Applied AI</b><span>UNIPDS · in progress</span></li>
+          <li><b>Postgrad — Networks and Cybersecurity</b><span>Hackone · 2023</span></li>
+          <li><b>Postgrad — Software Architecture, Data Science and Cybersecurity</b><span>PUC-PR · 2021–2022</span></li>
+          <li><b>Bachelor's — Systems Analysis and Development</b><span>Universidade Positivo · 2018–2020</span></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+</div>
+</body>
+</html>
