@@ -100,8 +100,8 @@
   };
 
   var CV = {
-    pt: { href: "assets/cv-pt.pdf", name: "Alexandre Tsumanuma - CV.pdf" },
-    en: { href: "assets/cv-en.pdf", name: "Alexandre Tsumanuma - Resume.pdf" }
+    pt: { href: "assets/cv-pt.pdf?v=2", name: "Alexandre Tsumanuma - CV.pdf" },
+    en: { href: "assets/cv-en.pdf?v=2", name: "Alexandre Tsumanuma - Resume.pdf" }
   };
 
   function applyLang(lang) {
